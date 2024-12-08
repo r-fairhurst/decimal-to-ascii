@@ -1,26 +1,28 @@
 # Decimal to ASCII
 
-The program itself is rather simple, 
+The program itself is rather simple, just converts a decimal value to a ascii value in little endian. It will also output the hex value of the decimal value.
+
+This is mainly intended for CTF challenges where you need to convert a decimal value to a ascii value for a buffer overflow, or any other reason where you need to make an ascii value equal toa decimal value.
 
 ## How to compile
 
-To compile the program you can use the following command:
+You can use the following command:
 
 ```shell
 gcc -o decimal_to_ascii.exe decimal_to_ascii.c
 ```
 
-This will create a executable file called `decimal_to_ascii.exe` that you can run.
+This will create a executable file called `decimal_to_ascii.exe` that you can run, or you can name it whatever you want.
 
-## How to run
+## Ways to run
+> Note: im using decimal_to_ascii.exe as the name of the executable, you can name it whatever you want.
 
-To run the program you can use the following command:
+Just running the executable will prompt you to enter a decimal value to convert to a ascii value.
 
 ```shell
 ./decimal_to_ascii.exe
+Enter a decimal number: 
 ```
-
-This will prompt you to enter a decimal value to convert to a ascii value.
 
 You can also run the program with a command line argument to convert a decimal value to a ascii value.
 
@@ -31,7 +33,6 @@ You can also run the program with a command line argument to convert a decimal v
 ## Example Output
 
 ```shell
-Enter a decimal number: 26984
 Decimal: 26984
 HEX: 0x6968
 ASCII: 'hi'
